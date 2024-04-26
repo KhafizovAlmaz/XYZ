@@ -6,7 +6,7 @@
 
 Запуск Selenium Grid:
 ```sh
-java -jar selenium-server-<version>.jar standalone
+java -jar selenium-server-4.19.1.jar standalone
 ```
 
 После успешного запуска Grid в автономном режиме укажите для тестов WebDriver адрес http://localhost:4444 .
