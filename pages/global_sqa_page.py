@@ -9,6 +9,7 @@ class GlobalSqaPage(BasePage):
 
     def authorization(self):
         with allure.step('Авторизация в сервисе по аккаунтом Harry Potter'):
+            self.element_is_clickable(self.locators.CUSTOM_LOGIN).click()
             self.select_option(self.locators.USER_LIST, "2")
             self.element_is_clickable(self.locators.SUBMIT_BTN).click()
             self.check_text('Harry Potter', self.locators.USER_NAME)

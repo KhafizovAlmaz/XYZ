@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class GlobalSqaLocators:
+    CUSTOM_LOGIN = (By.CSS_SELECTOR, 'button[ng-click="customer()"]')
     USER_LIST = (By.ID, 'userSelect')
     SUBMIT_BTN = (By.CLASS_NAME, 'btn-default')
     USER_NAME = (By.CLASS_NAME, 'fontBig')
