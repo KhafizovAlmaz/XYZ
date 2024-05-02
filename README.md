@@ -10,3 +10,21 @@ java -jar selenium-server-4.19.1.jar standalone
 ```
 
 После успешного запуска Grid в автономном режиме укажите для тестов WebDriver адрес http://localhost:4444 .
+
+Установка зависимостей:
+
+```commandline
+pip install -r requirements.txt
+```
+
+Запуск тестов: 
+
+```commandline
+pytest -v -s --alluredir results
+```
+
+Allure отчеты:
+
+```commandline
+allure serve results
+```
